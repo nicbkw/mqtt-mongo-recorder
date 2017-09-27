@@ -3,6 +3,10 @@ mqtt-mongo-recorder
 
 This NodeJS application listens to MQTT messages and records them to MongoDB
 
+Edited to connect to The Things Network
+
+Input your own APPID and ACCESSKEY in config.js
+
 Example
 =======
 
