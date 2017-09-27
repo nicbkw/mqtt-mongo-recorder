@@ -10,7 +10,7 @@ var mongodb  = require('mongodb');
 var mqtt     = require('mqtt');
 var config   = require('./config');
 
-var mqttUri  = 'mqtt://' + config.mqtt.hostname + ':' + config.mqtt.port;
+var mqttUri  = 'mqtt://' + config.mqtt.user + ':' + config.mqtt.password + '@' + config.mqtt.hostname + ':' + config.mqtt.port;
 var client   = mqtt.connect(mqttUri);
 
 client.on('connect', function () {
